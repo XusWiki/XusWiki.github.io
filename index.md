@@ -20,6 +20,5 @@
 [2.3 数理统计](#!/Sources/CFA1.2.3.md)
 [2.4 概率论基础](#!/Sources/CFA1.2.4.md)
 [2.5 常见概率分布](#!/Sources/CFA1.2.5.md)
-
-## 留言
-[gimmick:Disqus](xuswiki.disqus.com)
+[2.6 抽样和估计](#!/Sources/CFA1.2.6.md)
+[2.7 假设检验](#!/Sources/CFA1.2.7.md)
