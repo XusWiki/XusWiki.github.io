@@ -54,6 +54,3 @@ IRR:
 
 
 <center><img src="http://latex.codecogs.com/png.latex?R_{T}=[(1+R_{P1})\times(1+R_{P2})\times \dots \times(1+R_{PN})]^{\frac{1}{N}}-1"></center>
-
-## 留言
-[gimmick:Disqus](xuswiki.disqus.com)

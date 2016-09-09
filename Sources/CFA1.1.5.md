@@ -20,6 +20,4 @@
 
 ※ 注意雇主与主观的区别。
 
-## 留言
-[gimmick:Disqus](xuswiki.disqus.com)
 

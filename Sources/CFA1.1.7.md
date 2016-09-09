@@ -9,5 +9,3 @@
 - 正确使用 CFA 头衔；
 - 按时缴纳会费
 
-## 留言
-[gimmick:Disqus](xuswiki.disqus.com)

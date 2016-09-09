@@ -16,5 +16,3 @@
 - 区分：①soft dollar：非现金好处如研究报告等，用于服务客户；②referral fees：介绍费（将业务推荐给第三方是收到的好处）；
 - 介绍费无论金额大小**一定要披露**
 
-## 留言
-[gimmick:Disqus](xuswiki.disqus.com)

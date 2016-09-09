@@ -69,6 +69,3 @@
 
 
 <center><img src="http://latex.codecogs.com/png.latex?P=\frac{A}{i}"></center>
-
-## 留言
-[gimmick:Disqus](xuswiki.disqus.com)

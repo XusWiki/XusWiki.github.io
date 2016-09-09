@@ -59,6 +59,3 @@
 2. 样本选择偏差（sample selection bias）：因为样本选择过程不能涵盖全部个体造成的偏差；
 3. 存活偏差（survivorship bias）：e.g. 股票指数中不包含已经退市、倒闭的企业;
 4. 时间间隔偏差（time-period bias）：只检验使结论成立的特定时间段
-
-## 留言
-[gimmick:Disqus](xuswiki.disqus.com)

@@ -110,5 +110,3 @@
 2. Platy kurtic（低峰）
 
 Excess kurtosis（超额峰度）：因为正态分布的峰度为 3，超额峰度等于（K - 3）。
-## 留言
-[gimmick:Disqus](xuswiki.disqus.com)

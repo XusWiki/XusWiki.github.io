@@ -60,6 +60,3 @@
 
 - 排列问题
 <center><img src="http://latex.codecogs.com/png.latex?_{n}P_{r}=\frac{n!}{(1-r)!}"></center>
-
-## 留言
-[gimmick:Disqus](xuswiki.disqus.com)
