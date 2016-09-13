@@ -22,3 +22,6 @@
 [2.5 常见概率分布](#!/Sources/CFA1.2.5.md)
 [2.6 抽样和估计](#!/Sources/CFA1.2.6.md)
 [2.7 假设检验](#!/Sources/CFA1.2.7.md)
+
+#### III. Economics
+[3.1 导引](#!/Sources/CFA1.3.1.md)
