@@ -24,4 +24,7 @@
 [2.7 假设检验](#!/Sources/CFA1.2.7.md)
 
 #### III. Economics
-[3.1 导引](#!/Sources/CFA1.3.1.md)
+[3.1 导引](#!/Sources/CFA1.3.1.md) 
+[3.2 消费者选择理论](#!/Sources/CFA1.3.2.md) 
+[3.3 厂商的目标](#!/Sources/CFA1.3.3.md)
+[3.4 厂商与市场结构](#!/Sources/CFA1.3.4.md)
