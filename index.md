@@ -59,3 +59,7 @@
 [5.5 理解资产负债表](#!/Sources/CFA1.5.5.md)
 
 #### VI. 
+
+## 计算机科学／编程 Computer Science & Programming
+
+[Python 编程笔记](#!/Sources/Python_notes.md)
