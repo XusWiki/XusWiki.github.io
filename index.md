@@ -15,4 +15,4 @@
 [gimmick:math]()
 $$ x = \frac{-ba}{2a} $$
 \\(d=3a \frac{1}{2} \\)
-[gimmick:Disqus](xurenfeicn@icloud.com)
+[gimmick:Disqus](@disqus_AhScvwHzlu)
