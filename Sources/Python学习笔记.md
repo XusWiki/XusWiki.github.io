@@ -135,4 +135,28 @@ r|w|a|x|b|t|+
 
 ****
 
-`os` 模块为 Python 带来了多平台*文件系统*支持，详见 [`os` 模块中关于**文件**／**路径**常用的函数使用方法](Python学习笔记os.md)；[`os.path` 模块中关于*路径*常用的函数使用方法](Python学习笔记os.path.md)
+`os` 模块为 Python 带来了多平台*文件系统*支持，详见 [`os` 模块中关于**文件**／**路径**常用的函数使用方法](Python学习笔记_os.md)；[`os.path` 模块中关于*路径*常用的函数使用方法](Python学习笔记_os.path.md)。
+
+****
+
+在 Python 环境中，用户可以很轻松底将数据写入到文件中。相反地，从文件中恢复列表、元组或者字典就没那么方便了。为了解决这一问题，Python 提供了 `pickle` 模块。`pickle` 模块可以把**列表**、**元组**与**字典**等内容保存为一个**二进制文件**。
+
+`pickle` 的**创建方法**为：
+
+	import pickle
+	list = [1, 2, 3, 4] # 创建一个用于封装的列表
+	list_file = open('list.pickle', 'wb') # 创建用于封装的二进制文件
+	pickle.dump(list, list_file) # 用 pickle 将列表封装进文件
+	list_file.close() # 关闭并保存文件
+
+`pickle` 的**调用方法**为：
+
+	import pickle
+	list_file = open('list.pickle', 'rb') # 打开封装的二进制文件
+	list = pickle.load(list_file) # 用 pickle 将保存的文件调取出来
+
+注意:
+使用 `open()` 创建存储 `pickle` 内容的文件时，**一定**要用 `wb` 来创建**二进制文件**。同理，使用 `open()` 读取存储 `pickle` 内容的文件时，**一定**要用 `rb` 参数，因为要调用的是一个二进制文件。
+存储 `pickle` 内容的文件不必使用 `.pickle` 作为后缀。因为这个文件是二进制文件，使用任何后缀都不会影响文件的内容。使用 `.pickle` 只是为了提醒用户用 `pickle` 模块来调用这个文件。
+
+## 8.异常处理
