@@ -125,8 +125,8 @@ r|w|a|x|b|t|+
 注意:
 当需要读取一个较长的文件时，使用 `*.readline()` 效率比较低。推荐的调用方法如下：
 	
-	for i in file:
-		print(i)
+	>>> for i in file:
+	...	    print(i)
 
 ****
 
@@ -143,20 +143,49 @@ r|w|a|x|b|t|+
 
 `pickle` 的**创建方法**为：
 
-	import pickle
-	list = [1, 2, 3, 4] # 创建一个用于封装的列表
-	list_file = open('list.pickle', 'wb') # 创建用于封装的二进制文件
-	pickle.dump(list, list_file) # 用 pickle 将列表封装进文件
-	list_file.close() # 关闭并保存文件
+	>>> import pickle
+	>>> list = [1, 2, 3, 4] # 创建一个用于封装的列表
+	>>> list_file = open('list.pickle', 'wb') # 创建用于封装的二进制文件
+	>>> pickle.dump(list, list_file) # 用 pickle 将列表封装进文件
+	>>> list_file.close() # 关闭并保存文件
 
 `pickle` 的**调用方法**为：
 
-	import pickle
-	list_file = open('list.pickle', 'rb') # 打开封装的二进制文件
-	list = pickle.load(list_file) # 用 pickle 将保存的文件调取出来
+	>>> import pickle
+	>>> list_file = open('list.pickle', 'rb') # 打开封装的二进制文件
+	>>> list = pickle.load(list_file) # 用 pickle 将保存的文件调取出来
 
 注意:
 使用 `open()` 创建存储 `pickle` 内容的文件时，**一定**要用 `wb` 来创建**二进制文件**。同理，使用 `open()` 读取存储 `pickle` 内容的文件时，**一定**要用 `rb` 参数，因为要调用的是一个二进制文件。
 存储 `pickle` 内容的文件不必使用 `.pickle` 作为后缀。因为这个文件是二进制文件，使用任何后缀都不会影响文件的内容。使用 `.pickle` 只是为了提醒用户用 `pickle` 模块来调用这个文件。
 
 ## 8.异常处理
+
+用户非法输入等情况会造成程序异常。为了提高程序的稳定性，进而在出现异常的情况下继续程序运行。可以采取**异常处理**的方法。异常处理判断利用**关键字** `try` 引导的代码块是否出现异常，如果出现异常则中止 `try` 后面的代码并执行**关键字** `exception` 引导的代码块。另外，关键字 `final` 引导的代码块不会被终止。
+
+	>>> variable = 'str' # 将变量定义为字符串，因此其无法与整型相加。
+	>>> try:
+	...     result = variable + 1
+	...     print(result)
+	>>> exception SyntaxError as reason: # 对 SyntaxError 异常执行以下操作，并将错误原因赋值给变量 reason。
+	...     print('Script stoped for:', str(reason), 'reset variable as 1.')
+	...     variable = 1
+	>>> exception:
+	...     print('Script stoped for an unknown error.')   
+	>>> finally:
+	...     del result
+
+说明:
+如果 `try:` 代码块**未出现异常**，将跳过其后的 `exception:` 代码块； `finally` 代码块则不会被跳过。如果 `try:` 代码块**出现异常**，将执行其后的 `exception:` 代码块； `finally` 代码块依然会被执行。
+将错误原因赋值给一个新变量这一步是非必要的，第五行代码也可以写成 `exception SyntaxError:`。第八行代码 `exception:` 也是合法的，但这种异常处理方式会将所有种类的异常都纳入进来。因此**不建议采用**这种写法。
+异常代码详见[常见异常代码解析](/Python学习笔记_Error.md)。
+
+如果用户想要引发一个异常，则可以使用 `raise` 关键字，以下两种写法都可以：
+
+	>>> raise
+
+	>>> raise SyntaxError # 也可以是其他异常的代码
+
+## 9. `else` & `with`
+
+ 
